@@ -32,6 +32,6 @@ namespace YumiBot
 	public struct BotConfig
 	{
 		public string Token;
-		public string CmdPrefix;
+		public string DefaultCmdPrefix;
 	}
 }

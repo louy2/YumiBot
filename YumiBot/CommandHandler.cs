@@ -26,7 +26,7 @@ namespace YumiBot
 			if (context.User.IsBot) return;
 
 			var argPos = 0;
-			if(msg.HasStringPrefix(Config.bot.CmdPrefix, ref argPos) 
+			if(msg.HasStringPrefix(Config.Bot.DefaultCmdPrefix, ref argPos) 
 			   || msg.HasMentionPrefix(_client.CurrentUser, ref argPos))
 			{
 				var result = await _service.ExecuteAsync(context, argPos);
