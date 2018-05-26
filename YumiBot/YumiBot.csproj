@@ -180,6 +180,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandHandler.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Modules\Roles.cs" />
+    <Compile Include="Modules\Test.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

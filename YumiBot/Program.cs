@@ -16,13 +16,13 @@ namespace YumiBot
 
 		public async Task StartAsync()
 		{
-			if (string.IsNullOrEmpty(Config.bot.Token)) return;
+			if (string.IsNullOrEmpty(Config.Bot.Token)) return;
 			_client = new DiscordSocketClient(new DiscordSocketConfig
 			{
 				LogLevel = LogSeverity.Verbose
 			});
 			_client.Log += Log;
-			await _client.LoginAsync(TokenType.Bot, Config.bot.Token);
+			await _client.LoginAsync(TokenType.Bot, Config.Bot.Token);
 			await _client.StartAsync();
 			Global.Client = _client;
 			_handler = new CommandHandler();
